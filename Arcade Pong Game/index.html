@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <title>ARCADE-PONG</title>
+  </head>
+  <body>
+    <h1 class="title">PONG</h1>
+    <span class="score" id="player1score">0</span>
+    <span class="score" id="player2score">0</span>
+    <h3 class="startText" id="startText">
+      Press "Space" to start the game <br />and <br />
+      "R" to reset
+    </h3>
+    <div class="gameArea">
+      <div class="paddle1 paddle" id="paddle1"></div>
+      <div class="paddle2 paddle" id="paddle2"></div>
+      <div class="ball" id="ball"></div>
+      <div class="net"></div>
+    </div>
+    <img src="./assets/machine.png" alt="Arcade Game Box" class="bg" />
+    <div class="vignett"></div>
+    <audio src="./assets/assets_paddle.wav" id="paddleSound"></audio>
+    <audio src="./assets/assets_wall.wav" id="wallSound"></audio>
+    <audio src="./assets/assets_loss.wav" id="lossSound"></audio>
+  </body>
+</html>
